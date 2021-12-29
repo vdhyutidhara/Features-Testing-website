@@ -3,12 +3,12 @@ import { FaPalette, FaReact, FaCode } from "react-icons/fa";
 
 const BOOTSTRAP_FOR_SKILL_ICON = "text-4xl mx-auto inline-block";
 const data = {
-  name: "Brayden W",
-  title: "Front-End Developer/Designer",
+  name: "Vinay Gupta",
+  title: "Web Developer",
   social: {
-    github: "https://github.com/BraydenTW",
-    dribbble: "https://github.com/BraydenTW",
-    twitter: "https://github.com/BraydenTW",
+    github: "https://github.com/",
+    dribbble: "https://github.com/",
+    twitter: "https://github.com/",
     email: "someone@example.com",
   },
   about: {
@@ -32,26 +32,26 @@ const data = {
   ],
   projects: [
     {
-      title: "React tailwind portfolio",
-      description: "👨‍🎨 An open-source portfolio template built with React and Tailwind.",
+      title: "React portfolio",
+      description: "👨‍🎨 An portfolio built with React.",
       tags: [
-        "template",
-        "portfolio",
-        "reactjs",
-        "tailwindcss"
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React"
       ],
-      link: "https://github.com/braydentw/react-tailwind-portfolio"
+      link: "https://github.com/"
     },
     {
       title: "My personal website",
-      description: "⚡ My portfolio built with NextJS and TailwindCSS.",
+      description: "⚡ My portfolio built with React.",
       tags: [
-        "website",
-        "portfolio",
-        "nextjs",
-        "tailwindcss"
+        "HTML5",
+        "CSS#",
+        "JavaScript",
+        "React"
       ],
-      link: "https://github.com/braydentW/braydentw"
+      link: "https://github.com/"
     }
   ]
 };

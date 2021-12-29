@@ -1,34 +1,32 @@
-import { lazy, Suspense } from 'react';
-
-const Header = lazy(() => import('./components/Header'));
-const Hero = lazy(() => import('./components/Hero'));
-const Project = lazy(() => import('./components/Project'));
-const Skill = lazy(() => import('./components/Skill'));
-const Contact = lazy(() => import('./components/Contact'));
+import React, { useEffect } from "react";
+import "./App.css";
+import About from "./partials/About";
+import Card from "./partials/Card";
+import Footer from "./partials/Footer";
+import Projects from "./partials/Projects";
+import Skills from "./partials/Skills";
+import data from "./assets/data";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  });
   return (
-    <Suspense
-      fallback={
-        <div className='sk-folding-cube'>
-          <div className='sk-cube1 sk-cube'></div>
-          <div className='sk-cube2 sk-cube'></div>
-          <div className='sk-cube4 sk-cube'></div>
-          <div className='sk-cube3 sk-cube'></div>
-        </div>
-      }
-    >
-      <div className='App container my-10 mx-auto max-w-screen-lg bg-black'>
-        {/* <Header /> */}
-        <main>
-          <Hero />
-          {/* <Project /> */}
-          <Skill />
-          <Contact />
-        </main>
+    <div className="min-h-screen py-10 px-3 sm:px-5 bg-gray-100">
+      <div data-aos="fade-down" data-aos-duration="800">
+        <Card name={data.name} title={data.title} social={data.social} />
       </div>
-    </Suspense>
+      <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <About title={data.about.title} description={data.about.description} />
+        <Skills skills={data.skills} />
+        <Projects projects={data.projects} />
+        <Footer github={data.social.github} />
+      </div>
+    </div>
   );
 }
-
 export default App;

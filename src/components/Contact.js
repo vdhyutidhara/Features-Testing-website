@@ -1,5 +1,5 @@
 import React from 'react';
-import { ADDRESS, EMAIL_ID, FIRST_NAME, GITHUB_USERNAME, LAST_NAME, LINKEDIN_USERNAME, RESUME_PATH, TWITTER_ID } from '../root.link'
+
 const Contact = () => {
   return (
     <section className='my-28' id='contact'>
@@ -10,18 +10,18 @@ const Contact = () => {
       <div className='md:mx-6 flex flex-col flex-wrap md:flex-row justify-between'>
         <div className='md:w-6/12 md:px-0 p-5 my-5'>
           <div>
-            <p className='font-bold'>{FIRST_NAME} {LAST_NAME}</p>
-            <p className='font-thin'>{ADDRESS}</p>
-            <a href={`mailto: ${EMAIL_ID}`} className='border-b-2 mt-3 inline-block border-gray-500'>
-              {EMAIL_ID}
+            <p className='font-bold'>Theelipan Prabakar</p>
+            <p className='font-thin'>Middletown, Connecticut</p>
+            <a href='mailto: Theelipan@gmail.com' className='border-b-2 mt-3 inline-block border-gray-500'>
+              Theelipan@gmail.com
             </a>
           </div>
-          <a className='border-b-2 mt-3 inline-block border-gray-500' href={RESUME_PATH} target='_blank' rel='noreferrer'>
+          <a className='border-b-2 mt-3 inline-block border-gray-500' href='./Resume - Theelipan Prabakar.pdf' target='_blank' rel='noreferrer'>
             Resume
           </a>
           <div className='flex flex-row flex-wrap mt-7'>
             <div className='mr-4'>
-              <a href={`https://www.linkedin.com/in/${LINKEDIN_USERNAME}`} target='_blank' rel='noreferrer'>
+              <a href='https://www.linkedin.com/in/theelipan' target='_blank' rel='noreferrer'>
                 <span className='mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm'>
                   <img src='./images/icons/linkedin.svg' alt='' width='24px' height='24px' className='mr-1' />
                   LinkedIn
@@ -30,7 +30,7 @@ const Contact = () => {
             </div>
 
             <div className='mr-4'>
-              <a href={`https://github.com/${GITHUB_USERNAME}`} target='_blank' rel='noreferrer'>
+              <a href='https://github.com/Deelip7' target='_blank' rel='noreferrer'>
                 <span className='mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm'>
                   <img src='./images/icons/github.svg' alt='' width='24px' height='24px' className='mr-1' />
                   GitHub
@@ -38,10 +38,10 @@ const Contact = () => {
               </a>
             </div>
 
-            <a href={`https://twitter.com/${TWITTER_ID}`} target='_blank' rel='noreferrer'>
+            <a href='https://codepen.io/Theelipan' target='_blank' rel='noreferrer'>
               <span className='mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm'>
-                <img src='./images/icons/icons8-twitter (2).svg' alt='' width='24px' height='24px' className='mr-1' />
-                 Twitter
+                <img src='./images/icons/codepen.svg' alt='' width='24px' height='24px' className='mr-1' />
+                CodePen
               </span>
             </a>
           </div>

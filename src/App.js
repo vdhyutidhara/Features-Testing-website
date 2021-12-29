@@ -19,10 +19,10 @@ function App() {
       }
     >
       <div className='App container my-10 mx-auto max-w-screen-lg bg-black'>
-        <Header />
+        {/* <Header /> */}
         <main>
           <Hero />
-          <Project />
+          {/* <Project /> */}
           <Skill />
           <Contact />
         </main>

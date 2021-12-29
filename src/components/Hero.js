@@ -22,9 +22,9 @@ const Hero = () => {
         <div className='container' ref={container}></div>
       </div>
       <div className='max-w-md mb-auto space-y-5'>
-        <h1 className='text-5xl font-bold md:text-7xl'>Hello. I’m Theelipan</h1>
+        <h1 className='text-5xl font-bold md:text-7xl'>Hi! I’m Vinay from Earth.</h1>
         <p className='tracking-wide leading-relaxed'>
-          I have a passion for developing user-friendly, accessible and responsive websites. I never stop learning and for me, each new project is another adventure.{' '}
+          I like Coding.{' '}
         </p>
       </div>
     </section>

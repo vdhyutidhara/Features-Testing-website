@@ -33,19 +33,19 @@ function App() {
       </header>
       <h1>Registration Form</h1>
       <p>Please fill out this form with the required information</p>
-      <form action='https://register-demo.freecodecamp.org' onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <fieldset>
           <label htmlFor="first-name">Enter Your First Name:
-            <input id="first-name" name="first-name" type="text" value={state.firstName} onChange={handleInputChange} required />
+            <input id="first-name" name="firstName" type="text" value={state.firstName} onChange={handleInputChange} required />
           </label>
           <label htmlFor="last-name">Enter Your Last Name:
-            <input id="last-name" name="last-name" type="text" value={state.lastName} onChange={handleInputChange} required />
+            <input id="last-name" name="lastName" type="text" value={state.lastName} onChange={handleInputChange} required />
           </label>
           <label htmlFor="email">Enter Your Email:
             <input id="email" name="email" type="email" value={state.email} onChange={handleInputChange} required />
           </label>
           <label htmlFor="new-password">Enter Your Password:
-            <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" value={state.password} onChange={handleInputChange} required />
+            <input id="new-password" name="password" type="password" pattern="[a-z0-5]{8,}" value={state.password} onChange={handleInputChange} required />
           </label>
         </fieldset>
         <input type="submit" value="Submit" />
